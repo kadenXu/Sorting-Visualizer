@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sorting Visualizer</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<main>
+			<nav>
+				<ul id="navbar">
+					<li><h1 id="title">Sorting Visualizer</h1></li>
+					<li><div class="sorts_type">
+							<h3 id="Sorts">Sorts</h3>
+							<button class="AllSortsBtn" id="QuickSort" type="button">Quick Sort</button>
+							<button class="AllSortsBtn" id="BubbleSort" type="button">Bubble Sort</button>
+							<button class="AllSortsBtn" id="SelectionSort" type="button">Selection Sort</button>
+							<button class="AllSortsBtn" id="InsertionSort" type="button">Insertion Sort</button>
+							<button class="AllSortsBtn" id="MergeSort" type="button">Merge Sort</button>
+					</div></li>
+					<div id="adjustment">
+						<h3 id="adjust">Adjust</h3>
+						<div id="size-div" class="speed-size">
+							<label for="size">Size</label>
+							<br><input type="range" id="size" name="size" min="2" max="100" value="20"><br>
+							<span id="size-value">20</span>
+						</div>
+						<div id="speed-div" class="speed-size">
+							<label for="speed">Speed</label>
+							<br><input type="range" id="speed" name="speed" min="1" max="100" value="10"><br>
+							<span id="speed-value">10</span>
+						</div>
+					</div>
+					<div id="action">
+						<h3 id="act">action</h3>
+						<li><button id="randomize">Randomize</button></li>
+						<li><button id="sortBtn"  type="button">Sort !</button></li>
+					</div>
+				</ul>
+			</nav>
+		</main>
+		<div class="container">
+			<!-- JavaScript fills this up -->
+		</div>
+	</body>
+</html>
