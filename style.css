@@ -1,0 +1,186 @@
+#title {
+  color: white;
+  font-size: 4vh;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.863);
+}
+
+.container {
+  height: 85vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: rows;
+          flex-direction: rows;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav {
+  height: 12vh;
+  width: 100%;
+  background: blueviolet;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  float: left;
+}
+
+.sorts_type {
+  position: absolute;
+  top: 4%;
+  left: 25%;
+  width: 40%;
+  text-align: center;
+}
+
+/* For all the buttons */
+button {
+  background-color: #46afaf;
+  color: white;
+}
+
+.AllSortsBtn {
+  width: 70px;
+  height: 50px;
+  border-radius: 15%;
+  margin-right: 2%;
+}
+
+#sortBtn {
+  left: 94%;
+  width: 3rem;
+  position: absolute;
+  top: 5%;
+  height: 2rem;
+}
+
+/* ---  All the rectangles' styles--- */
+/* -- radomize button --*/
+#randomize {
+  position: absolute;
+  top: 5%;
+  height: 2rem;
+  left: 85%;
+}
+
+/* -- SpeedBar start -- */
+#speed-div {
+  position: absolute;
+  left: 73%;
+  top: 3.5%;
+  text-align: center;
+  color: wheat;
+}
+
+/* --- end --- */
+/* -- sizebar start -- */
+#size-div {
+  position: absolute;
+  left: 62%;
+  top: 3.5%;
+  text-align: center;
+  color: wheat;
+}
+
+/* --- end --- */
+#Sorts {
+  display: none;
+}
+
+#adjust {
+  display: none;
+}
+
+#act {
+  display: none;
+}
+
+/* --- Responsive Design for Mobile Device --- */
+@media only screen and (max-width: 1000px) {
+  #title {
+    position: absolute;
+    left: 5%;
+    width: 25vw;
+    font-size: 160%;
+  }
+  .sorts_type {
+    position: absolute;
+    top: 4%;
+    left: 30%;
+    width: 20%;
+    background-color: antiquewhite;
+  }
+  #Sorts {
+    display: block;
+  }
+  .AllSortsBtn {
+    display: none;
+    margin: auto;
+  }
+  #adjustment {
+    position: absolute;
+    top: 4%;
+    left: 52%;
+    width: 25%;
+    background: #3ec2c2;
+  }
+  .speed-size {
+    display: none;
+  }
+  #size-div {
+    position: relative;
+    left: 0%;
+  }
+  #speed-div {
+    position: relative;
+    left: 0%;
+  }
+  #adjust {
+    display: block;
+    text-align: center;
+  }
+  /* action */
+  #action {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 78%;
+    top: 4%;
+    width: 20%;
+    background: chocolate;
+  }
+  #action li {
+    display: none;
+  }
+  #sortBtn {
+    position: relative;
+    left: 35%;
+    width: 50%;
+  }
+  #randomize {
+    position: relative;
+    left: 22%;
+    width: 70%;
+    font-size: 70%;
+  }
+  #act {
+    display: block;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
